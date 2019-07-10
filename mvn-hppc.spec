@@ -4,14 +4,15 @@
 #
 Name     : mvn-hppc
 Version  : 0.7.2
-Release  : 3
+Release  : 4
 URL      : https://github.com/carrotsearch/hppc/archive/0.7.2.tar.gz
 Source0  : https://github.com/carrotsearch/hppc/archive/0.7.2.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/carrotsearch/hppc-parent/0.7.1/hppc-parent-0.7.1.pom
-Source2  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar
-Source3  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.pom
-Source4  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar
-Source5  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.pom
+Source2  : https://repo1.maven.org/maven2/com/carrotsearch/hppc-parent/0.7.2/hppc-parent-0.7.2.pom
+Source3  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar
+Source4  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.pom
+Source5  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar
+Source6  : https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -37,17 +38,20 @@ data components for the mvn-hppc package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc-parent/0.7.1
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc-parent/0.7.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc-parent/0.7.2
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc-parent/0.7.2
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1
 cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.2
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.2
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.2
 cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.2
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.2
 
 
 %files
@@ -56,6 +60,7 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/com/carrotsearch/hppc/0
 %files data
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/carrotsearch/hppc-parent/0.7.1/hppc-parent-0.7.1.pom
+/usr/share/java/.m2/repository/com/carrotsearch/hppc-parent/0.7.2/hppc-parent-0.7.2.pom
 /usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar
 /usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.pom
 /usr/share/java/.m2/repository/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar
