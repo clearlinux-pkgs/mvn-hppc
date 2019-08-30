@@ -4,7 +4,7 @@
 #
 Name     : mvn-hppc
 Version  : 0.7.2
-Release  : 4
+Release  : 5
 URL      : https://github.com/carrotsearch/hppc/archive/0.7.2.tar.gz
 Source0  : https://github.com/carrotsearch/hppc/archive/0.7.2.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/carrotsearch/hppc-parent/0.7.1/hppc-parent-0.7.1.pom
